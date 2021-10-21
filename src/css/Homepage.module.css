@@ -10,13 +10,9 @@ a {
 }
 
 :root {
-  /* --primary-color: rgba(55, 102, 153, 1); */
   --secondary-color: rgba(186, 85, 211, 1);
   --primary-font: 'Rubik', sans-serif;
   --header-font: 'Ranchers', sans-serif;
-  /* --primary-fontsize: 36px;
-    --secondary-fontsize: 18px; */
-  --content-fontsize: 16px;
   --shadow: 0 4px 8px 0 rgb(243, 239, 239), 0 6px 20px rgb(243, 239, 239);
 }
 
@@ -37,7 +33,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 25px;
+  padding-top: 15px;
 }
 
 .firstSection {
@@ -51,7 +47,7 @@ a {
   display: flex;
   gap: 30px;
   justify-content: center;
-  color: grey !important;
+  color: grey;
   font-size: 16px;
 }
 
@@ -68,6 +64,7 @@ a {
   background-color: white;
   padding: 8px 25px;
   border: none;
+  cursor: pointer;
 }
 
 .logIn {
@@ -77,239 +74,20 @@ a {
   font-weight: 400;
 }
 
-.mainContainer {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-.main {
-  display: flex;
-  align-items: center;
-
-  justify-content: space-between;
-  /* margin: 0px auto; */
-}
-
-.mainContent {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 35%;
-}
-
-.mainContent p {
-  max-width: 500px;
-  margin-bottom: 15px;
-  color: rgba(79, 86, 101, 1);
-  font-size: 15px;
-  line-height: 25px;
-}
-
-.mainContent h2 {
-  margin-bottom: 20px;
-
-  font-size: 35px;
-}
-
-.mainImg {
-  width: 50%;
-}
-
-.mainImage {
-  width: 100%;
-  object-fit: contain;
-}
-
-.rating {
-  display: flex;
-  justify-content: space-between;
-  padding: 40px;
-  align-items: center;
-  background: rgba(255, 255, 255, 1);
-  width: 100%;
-
-  margin-top: 55px;
-  box-shadow: var(--shadow);
-}
-
-.ratingText {
-  display: flex;
-  flex-direction: column;
-}
-
-.ratingText h2 {
-  color: rgba(11, 19, 42, 1);
-  font-size: 18px;
-}
-.ratingText p {
-  color: rgba(79, 86, 101, 1);
-  font-size: 15px;
-}
-
-.imgContainer {
-  background-color: white;
-  border-radius: 50%;
-  border: 1px solid gainsboro;
-  background: rgba(186, 85, 211, 0.25);
-  padding: 5px 7px;
-  display: flex;
-}
-.singleRating img {
-  object-fit: contain;
-}
-
-.singleRating {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
 /* Second Section */
 
-.faq {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.faqContainer {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.faqList {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.listContent {
-  display: flex;
-  gap: 5px;
-  align-items: center;
-}
-
-.listContent img {
-  width: 3%;
-}
-
-.listContent p,
-.pop {
-  font-size: 12px;
-  color: rgba(79, 86, 101, 1);
-}
-
-.faqContent {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.faqText {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.faqText h1,
-.pricingText h1,
 .partnersContent h1,
-.reviewText h1,
 .popUp h3 {
   font-size: 25px;
   color: #0b132a;
+  line-height: 35px;
 }
 
-.faqText p,
 .faqList,
-.pricingText p,
-.partnersContent p,
-.reviewText p,
-.footerCard p {
+.partnersContent p {
   font-size: 15px;
   color: rgba(79, 86, 101, 1);
   line-height: 25px;
-}
-
-/* .faqimg {
-} */
-
-/* Pricing Section */
-
-.priceGrid {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 20px;
-  width: 100%;
-  margin-top: 30px;
-  justify-content: center;
-}
-
-.pricingText {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.sectionPrice {
-  text-align: center;
-}
-
-.pricingText h1 {
-  margin-top: 30px;
-}
-
-.cardContent {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  align-items: center;
-  height: 200px;
-}
-
-.pricingCards:nth-last-child(1) {
-  border: 1px solid var(--secondary-color);
-}
-.pricingCards {
-  width: 100%;
-  border: 1px solid gainsboro;
-  text-align: center;
-  padding: 30px;
-}
-
-.pricingImg {
-  height: 100px;
-}
-
-.priceCardFooter {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-}
-
-.priceCardFooter p {
-  color: #0b132a;
-}
-
-.pricingCards h1 {
-  margin-bottom: 25px;
-  font-size: 16px;
-  color: rgba(11, 19, 42, 1);
-}
-
-.priceFeatures {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.priceFeatures p {
-  font-size: 12px;
-  text-align: center;
 }
 
 .partners {
@@ -327,16 +105,14 @@ a {
 }
 
 .partnersContainer {
-  min-height: 100vh;
+  min-height: 100%;
   align-items: center;
   justify-content: center;
   display: flex;
   text-align: center;
+  margin-top: 40px;
 }
 
-/* .partnersIcon img {
-  object-fit: contain;
-} */
 .partnersIcon {
   display: flex;
   gap: 10px;
@@ -349,160 +125,6 @@ a {
   height: 100px;
 }
 
-/* Review section */
-
-.reviewCard {
-  border: 1px solid gainsboro;
-  padding: 10px;
-  margin-top: 20px;
-  display: flex;
-  text-align: justify;
-  flex-direction: column;
-  /* width: 350px; */
-}
-
-.reviewCard:nth-child(1) {
-  border: 1px solid var(--secondary-color);
-}
-
-.leftcontent {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.reviewText {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.reviewCard h4 {
-  font-size: 17px;
-  color: rgba(11, 19, 42, 1);
-}
-
-.reviewCard p {
-  line-height: 30px;
-  font-size: 15px;
-}
-.reviewText p,
-.reviewCard p {
-  font-size: 15px;
-  color: rgba(11, 19, 42, 1);
-}
-.reviewContainer {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  gap: 50px;
-  text-align: center;
-  margin-left: 100px;
-}
-.reviewGrid {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: auto auto auto;
-}
-.reviewTop {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.reviewRating {
-  display: flex;
-  gap: 5px;
-}
-.reviewRating img {
-  object-fit: contain;
-}
-
-.reviewSlideBtn img {
-  object-fit: contain;
-}
-.reviewSlideBtn {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  justify-content: flex-end;
-  width: 100%;
-  margin-right: 150px;
-}
-
-.reviewBgLeft {
-  background-color: white;
-  display: flex;
-  padding: 8px;
-  border-radius: 50%;
-  border: 1px solid var(--secondary-color);
-}
-
-.reviewBgRight {
-  background-color: var(--secondary-color);
-  display: flex;
-  padding: 8px;
-  border-radius: 50%;
-}
-/* footer section */
-
-.footerGrid {
-  display: flex;
-  justify-content: space-between;
-  width: 85%;
-  margin: 0px auto;
-  padding: 80px 0px;
-}
-
-.footer {
-  background-color: rgba(248, 248, 248, 1);
-  position: relative;
-  margin-top: 100px;
-}
-
-.popUp {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 40px;
-  position: absolute;
-  background-color: white;
-  width: 85%;
-  border: 1px solid gainsboro;
-  bottom: 253px;
-  left: 100px;
-}
-
-.popUpText {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.popUpText p,
-.footerCard p {
-  color: rgba(79, 86, 101, 1);
-  font-size: 12px;
-}
-.footerCardh4 {
-  font-size: 15px;
-  margin-bottom: 8px;
-}
-
-.footerCardh3 {
-  margin-bottom: 8px;
-  font-weight: 400;
-}
-
-.footerCard {
-  display: flex;
-  gap: 5px;
-  flex-direction: column;
-}
-
-/* General button style */
 button {
   outline: none;
   border: none;
@@ -516,24 +138,58 @@ button {
   background-color: var(--secondary-color);
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
-.PriceBtn {
-  width: 150px;
-  color: var(--secondary-color);
-  border: 1px solid var(--secondary-color);
-  padding: 10px 20px;
+
+.Toogle {
+  display: none;
+  cursor: pointer;
 }
 
-.footerBtn {
-  width: 150px;
-  padding: 15px 10px;
-  color: white;
-  background-color: var(--secondary-color);
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+/* .myHeaderLinks {
+} */
+
+.Navdropdown {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 20px;
 }
-.mainBtn {
-  padding: 13px 20px;
-  color: white;
-  width: 150px;
-  background-color: var(--secondary-color);
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+
+@media only screen and (max-width: 998px) {
+  .homeWrapper {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .myHeaderLinks,
+  .headBtn {
+    display: none;
+  }
+
+  .partnersContainer {
+    margin-top: 60px;
+  }
+
+  .Toogle {
+    display: block;
+  }
+
+  .headerLinks {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .partnersIcon {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .partnersContent h1 {
+    font-size: 22px;
+  }
+  .partnersContent p {
+    font-size: 14px;
+  }
 }

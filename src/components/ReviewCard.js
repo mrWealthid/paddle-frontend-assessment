@@ -1,5 +1,5 @@
 import React from 'react';
-import Styles from '../css/Homepage.module.css';
+import Styles from '../css/Testimonial.module.css';
 import Pics from '../assets/Ellipse1.png';
 import Star from '../assets/star.png';
 const ReviewCard = ({ img, name, location }) => {

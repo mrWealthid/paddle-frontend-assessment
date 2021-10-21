@@ -1,5 +1,5 @@
 import React from 'react';
-import Styles from '../css/Homepage.module.css';
+import Styles from '../css/Main.module.css';
 import LandingPics from '../assets/webDeveloper.png';
 import Ratings from './Ratings';
 import Button from './Button';

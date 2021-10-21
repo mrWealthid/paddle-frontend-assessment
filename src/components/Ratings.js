@@ -1,5 +1,5 @@
 import React from 'react';
-import Styles from '../css/Homepage.module.css';
+import Styles from '../css/Main.module.css';
 import Server from '../assets/Group1217.png';
 import Location from '../assets/location.png';
 import Users from '../assets/user.png';

@@ -1,5 +1,5 @@
 import React from 'react';
-import Styles from '../css/Homepage.module.css';
+import Styles from '../css/Footer.module.css';
 
 const FooterCard = ({ title, myStyle }) => {
   return (

@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+a {
+  color: rgba(79, 86, 101, 1);
+}
+
+:root {
+  /* --primary-color: rgba(55, 102, 153, 1); */
+  --secondary-color: rgba(186, 85, 211, 1);
+  --primary-font: 'Rubik', sans-serif;
+  --header-font: 'Ranchers', sans-serif;
+}
+
+.reviewCard {
+  border: 1px solid gainsboro;
+  padding: 10px;
+  /* margin-top: 20px; */
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  /* width: 350px; */
+}
+
+.reviewCard:nth-child(1) {
+  border: 1px solid var(--secondary-color);
+}
+
+.leftcontent {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.reviewText {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reviewCard h4 {
+  font-size: 17px;
+  color: rgba(11, 19, 42, 1);
+}
+
+.reviewCard p {
+  line-height: 30px;
+  font-size: 15px;
+}
+.reviewText p,
+.reviewCard p {
+  font-size: 15px;
+  color: rgba(11, 19, 42, 1);
+}
+.reviewContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 50px;
+  text-align: center;
+  margin-left: 100px;
+}
+.reviewGrid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: auto auto auto;
+}
+.reviewTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reviewRating {
+  display: flex;
+  gap: 5px;
+}
+.reviewRating img {
+  object-fit: contain;
+}
+
+.reviewSlideBtn img {
+  object-fit: contain;
+}
+.reviewSlideBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 150px;
+}
+
+.reviewBgLeft {
+  background-color: white;
+  display: flex;
+  padding: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-color);
+}
+
+.reviewBgRight {
+  background-color: var(--secondary-color);
+  display: flex;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.reviewText p {
+  font-size: 15px;
+  color: rgba(79, 86, 101, 1);
+  line-height: 25px;
+}
+
+.reviewText h1 {
+  font-size: 25px;
+  color: #0b132a;
+  line-height: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+  .reviewGrid {
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
+
+  .reviewContainer {
+    width: 85%;
+    margin: 0px auto;
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .reviewText h1 {
+    font-size: 22px;
+  }
+  .reviewText p {
+    font-size: 14px;
+  }
+  .reviewGrid {
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
+  .reviewSlideBtn {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .reviewGrid {
+    grid-template-columns: auto;
+  }
+}

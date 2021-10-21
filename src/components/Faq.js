@@ -1,6 +1,7 @@
 import React from 'react';
 import Faqs from '../assets/Faq.png';
-import Styles from '../css/Homepage.module.css';
+
+import Styles from '../css/Faq.module.css';
 import ListContent from './ListContent';
 
 const Faq = () => {

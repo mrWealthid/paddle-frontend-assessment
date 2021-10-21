@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Styles from '../css/Homepage.module.css';
-
 import Main from './Main';
 
 import Faq from './Faq';
@@ -9,28 +8,18 @@ import Ratings from './Ratings';
 import Reviews from './Reviews';
 import Footer from './Footer';
 import Partners from './Partners';
+
+import HeaderLinks from './HeaderLinks';
+import { FaBars } from 'react-icons/fa';
 import NavLinks from './NavLinks';
+import Navbar from './Navbar';
 
 const Homepage = () => {
   return (
     <div>
       <div className={Styles.homeWrapper}>
         <section className={Styles.firstSection}>
-          <section className={Styles.header}>
-            <h1>PEDDLE</h1>
-            <div className={Styles.headerLinks}>
-              <NavLinks exact />
-              <NavLinks path='Faq' linkText={'FAQS'} />
-              <NavLinks path='pricing' linkText={'Pricing'} />
-              <NavLinks path='testimonials' linkText={'Testimonials'} />
-            </div>
-
-            <div className='headBtn'>
-              <button className={Styles.signIn}>Sign In</button>
-              <button className={Styles.logIn}>Sign Up</button>
-            </div>
-          </section>
-
+          <Navbar />
           <Main />
         </section>
 

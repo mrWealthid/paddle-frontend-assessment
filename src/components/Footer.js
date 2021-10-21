@@ -1,5 +1,6 @@
 import React from 'react';
-import Styles from '../css/Homepage.module.css';
+// import Styles from '../css/Homepage.module.css';
+import Styles from '../css/Footer.module.css';
 import Button from './Button';
 import FooterCard from './FooterCard';
 
