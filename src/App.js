@@ -1,6 +1,6 @@
 import { Switch, Route } from 'react-router-dom';
 import Homepage from './components/Homepage';
-import GitHub from './components/GitHub';
+
 import PageLinks from './components/PageLinks';
 import GitProfile from './gitComponents/GitProfile';
 

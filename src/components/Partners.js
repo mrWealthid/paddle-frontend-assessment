@@ -2,7 +2,7 @@ import React from 'react';
 import Styles from '../css/Homepage.module.css';
 import Spotify from '../assets/spotify.png';
 import Reddit from '../assets/reddit.png';
-import Amazon from '../assets/amazon.png';
+// import Amazon from '../assets/amazon.png';
 import Discord from '../assets/discord.png';
 import Netflix from '../assets/netflix.png';
 import Button from './Button';
