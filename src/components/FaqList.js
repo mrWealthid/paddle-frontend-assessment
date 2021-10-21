@@ -1,7 +1,6 @@
 import React from 'react';
-import Styles from '../css/Faq.module.css';
-import Rect from '../assets/Rectangle.png';
-const ListContent = () => {
+
+const FaqList = () => {
   return (
     <div className={Styles.listContent}>
       <img src={Rect} alt='listContent' />
@@ -10,4 +9,4 @@ const ListContent = () => {
   );
 };
 
-export default ListContent;
+export default FaqList;

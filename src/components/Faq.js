@@ -2,7 +2,7 @@ import React from 'react';
 import Faqs from '../assets/Faq.png';
 
 import Styles from '../css/Faq.module.css';
-import ListContent from './ListContent';
+import FaqList from './FaqList';
 
 const Faq = () => {
   return (
@@ -24,10 +24,11 @@ const Faq = () => {
           </div>
 
           <div className={Styles.faqList}>
-            <ListContent />
-            <ListContent />
-            <ListContent />
-            <ListContent />
+            <FaqList />
+            <FaqList />
+            <FaqList />
+            <FaqList />
+            <FaqList />
           </div>
         </div>
       </div>
