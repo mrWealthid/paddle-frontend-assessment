@@ -24,11 +24,11 @@ const Partners = () => {
         </div>
 
         <div className={Styles.partnersIcon}>
+          <img src={Netflix} alt='partnerIcons' />
           <img src={Discord} alt='partnerIcons' />
-          <img src={Amazon} alt='partnerIcons' />
+          <img src={Reddit} alt='partnerIcons' />
           <img src={Reddit} alt='partnerIcons' />
           <img src={Spotify} alt='partnerIcons' />
-          <img src={Netflix} alt='partnerIcons' />
         </div>
       </div>
     </div>

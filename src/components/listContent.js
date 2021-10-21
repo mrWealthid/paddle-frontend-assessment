@@ -1,7 +1,7 @@
 import React from 'react';
 import Styles from '../css/Homepage.module.css';
 import Rect from '../assets/Rectangle.png';
-const listContent = () => {
+const ListContent = () => {
   return (
     <div className={Styles.listContent}>
       <img src={Rect} alt='listContent' />
@@ -10,4 +10,4 @@ const listContent = () => {
   );
 };
 
-export default listContent;
+export default ListContent;

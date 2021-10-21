@@ -1,6 +1,6 @@
 import React from 'react';
 import Styles from '../css/Homepage.module.css';
-import { NavLink } from 'react-router-dom';
+
 import Main from './Main';
 
 import Faq from './Faq';
@@ -9,6 +9,7 @@ import Ratings from './Ratings';
 import Reviews from './Reviews';
 import Footer from './Footer';
 import Partners from './Partners';
+import NavLinks from './NavLinks';
 
 const Homepage = () => {
   return (
@@ -16,17 +17,17 @@ const Homepage = () => {
       <div className={Styles.homeWrapper}>
         <section className={Styles.firstSection}>
           <section className={Styles.header}>
-            <h1 className={Styles.head}>PEDDLE</h1>
+            <h1>PEDDLE</h1>
             <div className={Styles.headerLinks}>
-              <NavLink to=''>About</NavLink>
-              <NavLink to=''>FAQs</NavLink>
-              <NavLink to=''>Pricing</NavLink>
-              <NavLink to=''>Testimonial</NavLink>
+              <NavLinks exact />
+              <NavLinks path='Faq' linkText={'FAQS'} />
+              <NavLinks path='pricing' linkText={'Pricing'} />
+              <NavLinks path='testimonials' linkText={'Testimonials'} />
             </div>
 
             <div className='headBtn'>
-              <button className={Styles.signIn}>Signin</button>
-              <button className={Styles.logIn}>Login</button>
+              <button className={Styles.signIn}>Sign In</button>
+              <button className={Styles.logIn}>Sign Up</button>
             </div>
           </section>
 

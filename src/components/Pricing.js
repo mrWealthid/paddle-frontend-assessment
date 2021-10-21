@@ -1,6 +1,8 @@
 import React from 'react';
 import Styles from '../css/Homepage.module.css';
-import Price from '../assets/pricing1.png';
+import Price1 from '../assets/pricing3.png';
+import Price2 from '../assets/pricing2.png';
+import Price3 from '../assets/pricing1.png';
 import Checked from '../assets/check.png';
 import Button from './Button';
 
@@ -30,17 +32,18 @@ const Pricing = () => {
     },
   ];
   return (
-    <div className={Styles.sectionPrice}>
+    <div className={Styles.sectionPrice} id='pricing'>
       <div className={Styles.pricingText}>
         <h1>Choose Your Plan</h1>
         <p>
-          Let's choose the package that is best for you and explore it happily
+          Let's choose the package that is best for you and explore it happily{' '}
+          <br></br>
           and cheerfully.
         </p>
       </div>
       <div className={Styles.priceGrid}>
         <div className={Styles.pricingCards}>
-          <img src={Price} alt='pricing' />
+          <img className={Styles.pricingImg} src={Price1} alt='pricing' />
           <h1>Free Plan</h1>
           <div className={Styles.cardContent}>
             {list[0].content.map((content, ind) => (
@@ -50,11 +53,14 @@ const Pricing = () => {
               </div>
             ))}
           </div>
-          <Button btnText={'Select'} style={Styles.PriceBtn} />
+          <section className={Styles.priceCardFooter}>
+            <p>Free</p>
+            <Button btnText={'Select'} style={Styles.PriceBtn} />
+          </section>
         </div>
 
         <div className={Styles.pricingCards}>
-          <img src={Price} alt='pricing' />
+          <img className={Styles.pricingImg} src={Price2} alt='pricing' />
           <h1>Standard Plan</h1>
 
           <div className={Styles.cardContent}>
@@ -65,10 +71,14 @@ const Pricing = () => {
               </div>
             ))}
           </div>
-          <Button btnText={'Select'} style={Styles.PriceBtn} />
+
+          <section className={Styles.priceCardFooter}>
+            <p>$9/mo</p>
+            <Button btnText={'Select'} style={Styles.PriceBtn} />
+          </section>
         </div>
         <div className={Styles.pricingCards}>
-          <img src={Price} alt='pricing' />
+          <img className={Styles.pricingImg} src={Price3} alt='pricing' />
           <h1>Premium Plan</h1>
 
           <div className={Styles.cardContent}>
@@ -79,7 +89,11 @@ const Pricing = () => {
               </div>
             ))}
           </div>
-          <Button btnText={'Select'} style={Styles.PriceBtnLast} />
+
+          <section className={Styles.priceCardFooter}>
+            <p>$12/mo</p>
+            <Button btnText={'Select'} style={Styles.PriceBtnLast} />
+          </section>
         </div>
       </div>
     </div>

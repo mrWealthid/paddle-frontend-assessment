@@ -11,7 +11,7 @@ const Ratings = () => {
           <img src={Users} alt='reviews' />
         </div>
         <div className={Styles.ratingText}>
-          <p>90+</p>
+          <h2>90+</h2>
           <p>Users</p>
         </div>
       </div>
@@ -21,8 +21,8 @@ const Ratings = () => {
           <img src={Location} alt='reviews' />
         </div>
         <div className={Styles.ratingText}>
-          <p>30+</p>
-          <p>Location</p>
+          <h2>30+</h2>
+          <p>Locations</p>
         </div>
       </div>
 
@@ -31,7 +31,7 @@ const Ratings = () => {
           <img src={Server} alt='reviews' />
         </div>
         <div className={Styles.ratingText}>
-          <p>500+</p>
+          <h2>500+</h2>
           <p>Servers</p>
         </div>
       </div>

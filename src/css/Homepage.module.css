@@ -5,6 +5,10 @@
   text-decoration: none;
 }
 
+a {
+  color: rgba(79, 86, 101, 1);
+}
+
 :root {
   /* --primary-color: rgba(55, 102, 153, 1); */
   --secondary-color: rgba(186, 85, 211, 1);
@@ -13,6 +17,7 @@
   /* --primary-fontsize: 36px;
     --secondary-fontsize: 18px; */
   --content-fontsize: 16px;
+  --shadow: 0 4px 8px 0 rgb(243, 239, 239), 0 6px 20px rgb(243, 239, 239);
 }
 
 .homeWrapper {
@@ -21,9 +26,11 @@
 }
 
 /* Header Section */
-.head {
+.header h1,
+.footerCardh3 {
   color: var(--secondary-color);
   font-family: var(--header-font);
+  font-size: 19px;
 }
 
 .header {
@@ -42,9 +49,19 @@
 
 .headerLinks {
   display: flex;
-  gap: 10px;
+  gap: 30px;
+  justify-content: center;
+  color: grey !important;
+  font-size: 16px;
 }
 
+.myLinks {
+  cursor: pointer;
+}
+.signIn {
+  color: rgba(11, 19, 42, 1);
+  font-weight: 500;
+}
 .signIn,
 .logIn {
   outline: none;
@@ -55,6 +72,9 @@
 
 .logIn {
   border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  padding: 8px 30px;
+  font-weight: 400;
 }
 
 .mainContainer {
@@ -108,8 +128,9 @@
   align-items: center;
   background: rgba(255, 255, 255, 1);
   width: 100%;
-  border: 1px solid gainsboro;
+
   margin-top: 55px;
+  box-shadow: var(--shadow);
 }
 
 .ratingText {
@@ -117,13 +138,21 @@
   flex-direction: column;
 }
 
+.ratingText h2 {
+  color: rgba(11, 19, 42, 1);
+  font-size: 18px;
+}
+.ratingText p {
+  color: rgba(79, 86, 101, 1);
+  font-size: 15px;
+}
+
 .imgContainer {
   background-color: white;
   border-radius: 50%;
   border: 1px solid gainsboro;
   background: rgba(186, 85, 211, 0.25);
-
-  padding: 5px;
+  padding: 5px 7px;
   display: flex;
 }
 .singleRating img {
@@ -132,7 +161,8 @@
 
 .singleRating {
   display: flex;
-  gap: 10px;
+  gap: 20px;
+  align-items: center;
 }
 
 /* Second Section */
@@ -141,7 +171,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #e5e5e5; */
 }
 
 .faqContainer {
@@ -152,16 +181,26 @@
   justify-content: center;
 }
 
-.list {
+.faqList {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 }
 
 .listContent {
   display: flex;
-  gap: 10px;
+  gap: 5px;
   align-items: center;
+}
+
+.listContent img {
+  width: 3%;
+}
+
+.listContent p,
+.pop {
+  font-size: 12px;
+  color: rgba(79, 86, 101, 1);
 }
 
 .faqContent {
@@ -175,6 +214,27 @@
   flex-direction: column;
   gap: 10px;
 }
+
+.faqText h1,
+.pricingText h1,
+.partnersContent h1,
+.reviewText h1,
+.popUp h3 {
+  font-size: 25px;
+  color: #0b132a;
+}
+
+.faqText p,
+.faqList,
+.pricingText p,
+.partnersContent p,
+.reviewText p,
+.footerCard p {
+  font-size: 15px;
+  color: rgba(79, 86, 101, 1);
+  line-height: 25px;
+}
+
 /* .faqimg {
 } */
 
@@ -198,7 +258,7 @@
   text-align: center;
 }
 
-.sectionPrice h1 {
+.pricingText h1 {
   margin-top: 30px;
 }
 
@@ -206,18 +266,39 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  align-items: center;
+  height: 200px;
+}
 
-  height: 250px;
+.pricingCards:nth-last-child(1) {
+  border: 1px solid var(--secondary-color);
 }
 .pricingCards {
   width: 100%;
-  border: 1px solid var(--secondary-color);
+  border: 1px solid gainsboro;
   text-align: center;
   padding: 30px;
 }
 
+.pricingImg {
+  height: 100px;
+}
+
+.priceCardFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.priceCardFooter p {
+  color: #0b132a;
+}
+
 .pricingCards h1 {
   margin-bottom: 25px;
+  font-size: 16px;
+  color: rgba(11, 19, 42, 1);
 }
 
 .priceFeatures {
@@ -226,9 +307,15 @@
   align-items: center;
 }
 
+.priceFeatures p {
+  font-size: 12px;
+  text-align: center;
+}
+
 .partners {
   display: flex;
   flex-direction: column;
+  gap: 40px;
 }
 
 .partnersContent {
@@ -245,19 +332,21 @@
   justify-content: center;
   display: flex;
   text-align: center;
-  border: 1px solid gainsboro;
 }
 
-.partnersIcon img {
+/* .partnersIcon img {
   object-fit: contain;
-}
+} */
 .partnersIcon {
   display: flex;
-  gap: 5px;
+  gap: 10px;
+  justify-content: center;
 }
 
 .partnersIcon img {
   object-fit: contain;
+  width: 150px;
+  height: 100px;
 }
 
 /* Review section */
@@ -266,17 +355,41 @@
   border: 1px solid gainsboro;
   padding: 10px;
   margin-top: 20px;
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  /* width: 350px; */
+}
+
+.reviewCard:nth-child(1) {
+  border: 1px solid var(--secondary-color);
 }
 
 .leftcontent {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 
 .reviewText {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+.reviewCard h4 {
+  font-size: 17px;
+  color: rgba(11, 19, 42, 1);
+}
+
+.reviewCard p {
+  line-height: 30px;
+  font-size: 15px;
+}
+.reviewText p,
+.reviewCard p {
+  font-size: 15px;
+  color: rgba(11, 19, 42, 1);
 }
 .reviewContainer {
   min-height: 100vh;
@@ -300,6 +413,40 @@
   justify-content: space-between;
 }
 
+.reviewRating {
+  display: flex;
+  gap: 5px;
+}
+.reviewRating img {
+  object-fit: contain;
+}
+
+.reviewSlideBtn img {
+  object-fit: contain;
+}
+.reviewSlideBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 150px;
+}
+
+.reviewBgLeft {
+  background-color: white;
+  display: flex;
+  padding: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-color);
+}
+
+.reviewBgRight {
+  background-color: var(--secondary-color);
+  display: flex;
+  padding: 8px;
+  border-radius: 50%;
+}
 /* footer section */
 
 .footerGrid {
@@ -324,8 +471,29 @@
   background-color: white;
   width: 85%;
   border: 1px solid gainsboro;
-  bottom: 229px;
+  bottom: 253px;
   left: 100px;
+}
+
+.popUpText {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.popUpText p,
+.footerCard p {
+  color: rgba(79, 86, 101, 1);
+  font-size: 12px;
+}
+.footerCardh4 {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.footerCardh3 {
+  margin-bottom: 8px;
+  font-weight: 400;
 }
 
 .footerCard {
@@ -346,6 +514,7 @@ button {
   color: white;
   width: 150px;
   background-color: var(--secondary-color);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 .PriceBtn {
   width: 150px;
@@ -359,10 +528,12 @@ button {
   padding: 15px 10px;
   color: white;
   background-color: var(--secondary-color);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 .mainBtn {
   padding: 13px 20px;
   color: white;
   width: 150px;
   background-color: var(--secondary-color);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }

@@ -1,23 +1,25 @@
 import React from 'react';
 import Styles from '../css/Homepage.module.css';
 import Pics from '../assets/Ellipse1.png';
-const ReviewCard = () => {
+import Star from '../assets/star.png';
+const ReviewCard = ({ img, name, location }) => {
   return (
     <div className={Styles.reviewCard}>
-      <div className={Styles.reviewTop}>
+      <section className={Styles.reviewTop}>
         <div className={Styles.leftcontent}>
-          <img src={Pics} alt='reviewer' />
+          <img src={img} alt='reviewer' />
 
           <div>
-            <h4>Viezh Robert</h4>
-            <p>Warsaw, Poland</p>
+            <h4>{name}</h4>
+            <p>{location}</p>
           </div>
         </div>
 
-        <div>
+        <div className={Styles.reviewRating}>
           <p>4.5</p>
+          <img src={Star} alt='star' />
         </div>
-      </div>
+      </section>
 
       <p>
         “Mauris sem neque, ultrices nec sapien id, consequat laoreet dolor. Ut
@@ -26,6 +28,12 @@ const ReviewCard = () => {
       </p>
     </div>
   );
+};
+
+ReviewCard.defaultProps = {
+  img: Pics,
+  name: 'Viezh Robert',
+  location: 'Warsaw, Poland',
 };
 
 export default ReviewCard;

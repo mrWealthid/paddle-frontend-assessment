@@ -1,10 +1,13 @@
 import React from 'react';
 import ReviewCard from './ReviewCard';
 import Styles from '../css/Homepage.module.css';
-
+import Review1 from '../assets/Ellipse2.png';
+import Review2 from '../assets/Ellipse3.png';
+import Right from '../assets/RightArrow.png';
+import Left from '../assets/LeftArrow.png';
 const Reviews = () => {
   return (
-    <div className={Styles.reviewContainer}>
+    <div className={Styles.reviewContainer} id='testimonials'>
       <div className={Styles.reviewText}>
         {' '}
         <h1>
@@ -19,8 +22,25 @@ const Reviews = () => {
 
       <section className={Styles.reviewGrid}>
         <ReviewCard />
-        <ReviewCard />
-        <ReviewCard />
+        <ReviewCard
+          name={'Yessica Christy'}
+          location={'Shanxi, China'}
+          img={Review1}
+        />
+        <ReviewCard
+          name={'Kim Young Jou'}
+          img={Review2}
+          location={'Seoul, South Korea'}
+        />
+      </section>
+
+      <section className={Styles.reviewSlideBtn}>
+        <div className={Styles.reviewBgLeft}>
+          <img src={Left} alt='sliderbtn' />
+        </div>
+        <div className={Styles.reviewBgRight}>
+          <img src={Right} alt='sliderbtn' />
+        </div>
       </section>
     </div>
   );

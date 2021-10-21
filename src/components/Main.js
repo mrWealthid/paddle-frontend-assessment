@@ -6,7 +6,7 @@ import Button from './Button';
 
 const Main = () => {
   return (
-    <div className={Styles.mainContainer}>
+    <div className={Styles.mainContainer} id='about'>
       <section className={Styles.main}>
         <div className={Styles.mainContent}>
           <h2>
