@@ -4,17 +4,9 @@ import { Link as NavLink } from 'react-scroll';
 import Styles from '../css/Homepage.module.css';
 
 const NavLinks = ({ path, linkText }) => {
-  const myStyle = {
-    color: 'purple',
-  };
   return (
     <>
-      <NavLink
-        className={Styles.myLinks}
-        activeStyle={myStyle}
-        smooth={true}
-        to={path}
-      >
+      <NavLink className={Styles.myLinks} smooth={true} to={path}>
         {linkText}
       </NavLink>
     </>
