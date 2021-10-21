@@ -15,8 +15,11 @@ const Homepage = () => {
   return (
     <div>
       <div className={Styles.homeWrapper}>
-        <section className={Styles.firstSection}>
+        <section className={Styles.navBar}>
           <Navbar />
+        </section>
+
+        <section className={Styles.firstSection}>
           <Main />
         </section>
 
@@ -24,12 +27,19 @@ const Homepage = () => {
           <Faq />
         </section>
 
-        <section className={Styles.priceSection}>
+        <section className={Styles.thirdSection}>
           <Pricing />
         </section>
+
+        <section className={Styles.fourthSection}>
+          <Partners />
+        </section>
+
+        <section className={Styles.fifthSection}>
+          <Reviews />
+        </section>
       </div>
-      <Partners />
-      <Reviews />
+
       <Footer />
     </div>
   );

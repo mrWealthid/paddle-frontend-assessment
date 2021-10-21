@@ -57,15 +57,13 @@ a {
   color: rgba(11, 19, 42, 1);
 }
 .reviewContainer {
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   gap: 50px;
   text-align: center;
-  margin-left: 100px;
 }
 .reviewGrid {
   display: grid;

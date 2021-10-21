@@ -20,7 +20,7 @@ a {
   grid-template-columns: auto auto auto;
   gap: 20px;
   width: 100%;
-  margin-top: 30px;
+
   justify-content: center;
 }
 

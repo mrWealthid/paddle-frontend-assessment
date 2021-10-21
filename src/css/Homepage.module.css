@@ -19,6 +19,9 @@ a {
 .homeWrapper {
   width: 85%;
   margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 /* Header Section */
