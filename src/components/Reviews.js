@@ -1,7 +1,6 @@
 import React from 'react';
 import ReviewCard from './ReviewCard';
 import Styles from '../css/Testimonial.module.css';
-// import Styles from '../css/Homepage.module.css';
 import Review1 from '../assets/Ellipse2.png';
 import Review2 from '../assets/Ellipse3.png';
 import Right from '../assets/RightArrow.png';

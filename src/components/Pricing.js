@@ -1,5 +1,4 @@
 import React from 'react';
-// import Styles from '../css/Homepage.module.css';
 import Styles from '../css/Pricing.module.css';
 import Price1 from '../assets/pricing3.png';
 import Price2 from '../assets/pricing2.png';
