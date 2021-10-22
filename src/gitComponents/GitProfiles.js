@@ -3,6 +3,7 @@ import axios from 'axios';
 import Styles from '../css/GitProfile.module.css';
 import ReactPaginate from 'react-paginate';
 import ProfilesCard from './ProfilesCard';
+import Loader from './Loader';
 
 const GitProfiles = () => {
   const [profile, setProfile] = useState({
@@ -48,7 +49,12 @@ const GitProfiles = () => {
       );
   }, []);
 
-  profile.loading && (content = <p>Loading ...</p>);
+  profile.loading &&
+    (content = (
+      <p>
+        <Loader />
+      </p>
+    ));
   profile.error && (content = <p>Ooops ! An error occured ...</p>);
 
   const calcDate = (postDate) => {
@@ -61,7 +67,7 @@ const GitProfiles = () => {
     profile.data
       .slice(pagesVisited, pagesVisited + usersPerPage)
       .map((user, index) => {
-        return <ProfilesCard {...user} index={index} calcDate={calcDate} />;
+        return <ProfilesCard {...user} key={user.id} calcDate={calcDate} />;
       });
 
   const pageCount = Math.ceil(profile.data.length / usersPerPage);
