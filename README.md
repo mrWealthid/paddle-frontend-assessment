@@ -1,17 +1,15 @@
 # **Peddle Frontend Task**
 
-## **Task Description**
-
 ## **Task Description 1**
 
 Implement this Figma Design
-This task will requires pixel perfect implementation of figma design (Landing Page)
+This task requires pixel perfect implementation of landing page from figma design (Landing Page)
 
 Checks:
 Clean maintainable code.
 The responsiveness of your landing page.
 
-## **Task Description 1**
+## **Task Description 2**
 
 Fetch data from an Api and display results accordingly
 
@@ -34,7 +32,7 @@ Open the Project up in your code Editor
 using
 yarn Install
 
-# ** List Of Dependencies Used**
+## List Of Dependencies Used
 
 axios, react-reveal, react-paginate, react-router-dom, react-icons, react-scroll
 
