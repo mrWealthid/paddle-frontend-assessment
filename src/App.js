@@ -2,7 +2,7 @@ import { Switch, Route } from 'react-router-dom';
 import Homepage from './components/Homepage';
 
 import PageLinks from './components/PageLinks';
-import GitProfile from './gitComponents/GitProfile';
+import GitProfiles from './gitComponents/GitProfiles';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Switch>
         <Route path='/' exact component={PageLinks} />
         <Route path='/homepage' component={Homepage} />
-        <Route path='/github' component={GitProfile} />
+        <Route path='/github' component={GitProfiles} />
       </Switch>
     </div>
   );
