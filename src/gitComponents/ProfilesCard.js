@@ -14,30 +14,35 @@ const ProfilesCard = ({
   calcDate,
 }) => {
   const RandomUser =
-    'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fuser%2Bplaceholder&psig=AOvVaw2sDNrq_35Sl0cJjk3AQh9r&ust=1634976497313000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIicqJ3I3fMCFQAAAAAdAAAAABAD';
+    'https://image.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600w-1095249842.jpg';
   return (
     <div className={Styles.ProfileGrid}>
-      <div className={Styles.imgContainer}>
+      <section className={Styles.imgContainer}>
         <img src={img || RandomUser} alt='users' />
-      </div>
-      <div className={Styles.profileRightSection}>
-        <h3>{repoName || 'Not Available'}</h3>
+      </section>
+      <section className={Styles.profileRightSection}>
+        <p className={Styles.profileCardHead}>{repoName || 'Not Available'}</p>
         <p>{desc || 'Not Available'}</p>
-        <div className={Styles.profileRatings}>
+
+        <section className={Styles.profileRatings}>
           <button>
-            <FaStar />
+            <FaStar color='yellow' />
             <span className={Styles.starCount}> Stars: {stars}</span>
           </button>
           <button>
             <FaDotCircle />
             <span className={Styles.starCount}> Issues: {issues}</span>
           </button>
-        </div>
-        <p>
-          Submitted {calcDate(new Date(postDate))} days ago by {''}
+        </section>
+        <div>
+          Submitted{' '}
+          <span className={Styles.userName}>
+            {calcDate(new Date(postDate))}
+          </span>{' '}
+          days ago by {''}
           <span className={Styles.userName}>{username}</span>
-        </p>
-      </div>
+        </div>
+      </section>
     </div>
   );
 };

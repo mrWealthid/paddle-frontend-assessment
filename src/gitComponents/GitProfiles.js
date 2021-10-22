@@ -11,11 +11,16 @@ const GitProfiles = () => {
     data: [],
     error: false,
   });
+
   const [pageNumber, setPageNumber] = useState(0);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   let content = null;
 
-  const usersPerPage = 5;
+  const usersPerPage = 6;
   const pagesVisited = pageNumber * usersPerPage;
 
   const API =
@@ -34,7 +39,7 @@ const GitProfiles = () => {
       .then((data) => {
         setProfile({
           loading: false,
-          data: data.slice(0, 30),
+          data: data,
           error: false,
         });
 
@@ -49,13 +54,11 @@ const GitProfiles = () => {
       );
   }, []);
 
-  profile.loading &&
+  profile.loading && (content = <Loader />);
+  profile.error &&
     (content = (
-      <p>
-        <Loader />
-      </p>
+      <p className={Styles.loaderContainer}>Ooops ! An error occured ...</p>
     ));
-  profile.error && (content = <p>Ooops ! An error occured ...</p>);
 
   const calcDate = (postDate) => {
     let current = new Date();
@@ -78,20 +81,9 @@ const GitProfiles = () => {
 
   return (
     <div className={Styles.profileContainer}>
-      <h2> GitHub Profiles</h2>
+      <p className={Styles.profileHeader}> GitHub Profiles</p>
       {profile.data.length > 0 ? (
         <div className={Styles.profileCards}>
-          <ReactPaginate
-            previousLabel={'Previous'}
-            nextLabel={'Next'}
-            pageCount={pageCount}
-            onPageChange={changePage}
-            containerClassName={Styles.paginationBttns}
-            previousLinkClassName={Styles.previousBttn}
-            nextLinkClassName={Styles.nextBttn}
-            disabledClassName={Styles.paginationDisabled}
-            activeClassName={Styles.paginationActive}
-          />
           {displayUsers}
           <ReactPaginate
             previousLabel={'Previous'}

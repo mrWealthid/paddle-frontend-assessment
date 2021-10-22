@@ -4,7 +4,7 @@ import Styles from '../css/GitProfile.module.css';
 function Loader() {
   return (
     <div className={Styles.loaderContainer}>
-      <div className={Styles.loader}></div>
+      <p className={Styles.loader}></p>
     </div>
   );
 }
