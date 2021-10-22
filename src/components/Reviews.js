@@ -6,6 +6,7 @@ import Review1 from '../assets/Ellipse2.png';
 import Review2 from '../assets/Ellipse3.png';
 import Right from '../assets/RightArrow.png';
 import Left from '../assets/LeftArrow.png';
+
 const Reviews = () => {
   return (
     <div className={Styles.reviewContainer} id='testimonials'>

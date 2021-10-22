@@ -29,10 +29,14 @@ Fetch data from an Api and display results accordingly
 
 Open the Project up in your code Editor
 
-## **Install Dependencies**
+## **Install all Dependencies**
 
 using
 yarn Install
+
+# ** List Of Dependencies Used**
+
+axios, react-reveal, react-paginate, react-router-dom, react-icons, react-scroll
 
 ## **Start Server**
 

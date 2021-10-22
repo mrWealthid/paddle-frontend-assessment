@@ -42,8 +42,6 @@ a {
 .firstSection {
   display: flex;
   flex-direction: column;
-
-  /* background: wheat; */
 }
 
 .headerLinks {
@@ -77,7 +75,7 @@ a {
   font-weight: 400;
 }
 
-/* Second Section */
+/* Partners Section */
 
 .partnersContent h1,
 .popUp h3 {
@@ -132,6 +130,11 @@ button {
   outline: none;
   border: none;
   background-color: white;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+button:hover {
+  transform: scale(1.05);
 }
 
 .Btn {
@@ -146,9 +149,6 @@ button {
   display: none;
   cursor: pointer;
 }
-
-/* .myHeaderLinks {
-} */
 
 .Navdropdown {
   display: flex;

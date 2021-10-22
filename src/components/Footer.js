@@ -1,5 +1,4 @@
 import React from 'react';
-// import Styles from '../css/Homepage.module.css';
 import Styles from '../css/Footer.module.css';
 import Button from './Button';
 import FooterCard from './FooterCard';
@@ -21,14 +20,6 @@ const Footer = () => {
       </section>
 
       <div className={Styles.footerGrid}>
-        {/* <div className={Styles.footerCard}>
-          <h3>PEDDLE</h3>
-          <p>Praesent mollis lobortis nisl nec</p>
-          <p>Praesent mollis lobortis nisl nec</p>
-          <p>Praesent mollis lobortis nisl nec</p>
-          <p>Praesent mollis lobortis nisl nec</p>
-        </div> */}
-
         <FooterCard title={'PEDDLE'} myStyle={Styles.footerCardh3} />
 
         <FooterCard />

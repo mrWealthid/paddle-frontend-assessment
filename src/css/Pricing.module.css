@@ -10,7 +10,6 @@ a {
 }
 
 :root {
-  /* --primary-color: rgba(55, 102, 153, 1); */
   --secondary-color: rgba(186, 85, 211, 1);
   --primary-font: 'Rubik', sans-serif;
   --header-font: 'Ranchers', sans-serif;
@@ -20,7 +19,7 @@ a {
   grid-template-columns: auto auto auto;
   gap: 20px;
   width: 100%;
-
+  margin-top: 30px;
   justify-content: center;
 }
 
@@ -54,6 +53,11 @@ a {
   border: 1px solid gainsboro;
   text-align: center;
   padding: 30px;
+  transition: 1s ease-in-out;
+}
+
+.pricingCards:hover {
+  transform: scale(1.1);
 }
 
 .pricingImg {

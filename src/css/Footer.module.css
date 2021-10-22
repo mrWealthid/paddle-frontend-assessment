@@ -10,7 +10,6 @@ a {
 }
 
 :root {
-  /* --primary-color: rgba(55, 102, 153, 1); */
   --secondary-color: rgba(186, 85, 211, 1);
   --primary-font: 'Rubik', sans-serif;
   --header-font: 'Ranchers', sans-serif;

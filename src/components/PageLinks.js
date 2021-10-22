@@ -4,8 +4,16 @@ import { NavLink } from 'react-router-dom';
 const PageLinks = () => {
   return (
     <div className='home'>
-      <NavLink to='/homepage'>Homepage</NavLink>
-      <NavLink to='/github'>Github</NavLink>
+      <p className='homeheader'>Click To Access Route</p>
+
+      <div className='routeLinks'>
+        <NavLink className='linkBtn' to='/homepage'>
+          Homepage
+        </NavLink>
+        <NavLink className='linkBtn' to='/github'>
+          Github
+        </NavLink>
+      </div>
     </div>
   );
 };

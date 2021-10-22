@@ -54,6 +54,7 @@ const GitProfiles = () => {
       );
   }, []);
 
+  //handling error and loading state
   profile.loading && (content = <Loader />);
   profile.error &&
     (content = (
@@ -69,7 +70,7 @@ const GitProfiles = () => {
     profile.data.length > 0 &&
     profile.data
       .slice(pagesVisited, pagesVisited + usersPerPage)
-      .map((user, index) => {
+      .map((user) => {
         return <ProfilesCard {...user} key={user.id} calcDate={calcDate} />;
       });
 
