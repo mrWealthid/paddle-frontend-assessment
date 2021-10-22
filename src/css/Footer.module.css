@@ -44,6 +44,7 @@ a {
   border: 1px solid gainsboro;
   bottom: 253px;
   left: 100px;
+  border-radius: 8px;
 }
 
 .popUpText {

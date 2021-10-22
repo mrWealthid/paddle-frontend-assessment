@@ -1,19 +1,6 @@
 # **Peddle Frontend Task**
 
-## **Task Description 1**
-
-Implement this Figma Design
-This task requires pixel perfect implementation of landing page from figma design (Landing Page)
-
-Checks:
-Clean maintainable code.
-The responsiveness of your landing page.
-
-## **Task Description 2**
-
-Fetch data from an Api and display results accordingly
-
-### **How To Run Locally\_**
+## **How To Run Locally\_**
 
 2. Fork the repository: Click the "Fork" button on the upper right corner of the Repo page.
 3. Make a Local Clone: Clone the forked repository to your local machine (computer)
@@ -30,7 +17,7 @@ Open the Project up in your code Editor
 ## **Install all Dependencies**
 
 using
-yarn Install
+$ yarn Install
 
 ## List Of Dependencies Used
 
@@ -38,4 +25,4 @@ axios, react-reveal, react-paginate, react-router-dom, react-icons, react-scroll
 
 ## **Start Server**
 
-yarn start
+$ yarn start

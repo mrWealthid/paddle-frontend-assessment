@@ -47,6 +47,7 @@ const Pricing = () => {
           <div className={Styles.pricingCards}>
             <img className={Styles.pricingImg} src={Price1} alt='pricing' />
             <h1>Free Plan</h1>
+
             <div className={Styles.cardContent}>
               {list[0].content.map((content, ind) => (
                 <div key={ind} className={Styles.priceFeatures}>

@@ -101,6 +101,11 @@ a {
   display: flex;
   gap: 20px;
   align-items: center;
+  transition: 1s ease-in-out;
+}
+
+.singleRating:hover {
+  transform: scale(1.1);
 }
 
 .mainBtn {

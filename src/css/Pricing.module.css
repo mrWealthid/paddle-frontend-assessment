@@ -54,6 +54,7 @@ a {
   text-align: center;
   padding: 30px;
   transition: 1s ease-in-out;
+  border-radius: 5px;
 }
 
 .pricingCards:hover {
@@ -123,6 +124,9 @@ a {
   }
   .pricingText p {
     font-size: 14px;
+  }
+  .pricingCards:hover {
+    transform: scale(1);
   }
 }
 

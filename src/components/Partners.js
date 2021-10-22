@@ -6,6 +6,7 @@ import Discord from '../assets/discord.png';
 import Netflix from '../assets/netflix.png';
 import Button from './Button';
 import Slide from 'react-reveal/Slide';
+import Image from './Image';
 
 const Partners = () => {
   return (
@@ -25,11 +26,11 @@ const Partners = () => {
           </div>
 
           <div className={Styles.partnersIcon}>
-            <img src={Netflix} alt='partnerIcons' />
-            <img src={Discord} alt='partnerIcons' />
-            <img src={Reddit} alt='partnerIcons' />
-            <img src={Reddit} alt='partnerIcons' />
-            <img src={Spotify} alt='partnerIcons' />
+            <Image src={Netflix} />
+            <Image src={Discord} />
+            <Image src={Reddit} />
+            <Image src={Reddit} />
+            <Image src={Spotify} />
           </div>
         </div>
       </Slide>

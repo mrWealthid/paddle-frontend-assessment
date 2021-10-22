@@ -2,39 +2,15 @@ import React from 'react';
 import Styles from '../css/Main.module.css';
 import Server from '../assets/Group1217.png';
 import Location from '../assets/location.png';
-import Users from '../assets/user.png';
+
+import SingleRating from './SingleRating';
 const Ratings = () => {
   return (
     <div className={Styles.rating}>
-      <div className={Styles.singleRating}>
-        <div className={Styles.imgContainer}>
-          <img src={Users} alt='reviews' />
-        </div>
-        <div className={Styles.ratingText}>
-          <h2>90+</h2>
-          <p>Users</p>
-        </div>
-      </div>
+      <SingleRating />
+      <SingleRating image={Location} amount='30+' type='Locations' />
 
-      <div className={Styles.singleRating}>
-        <div className={Styles.imgContainer}>
-          <img src={Location} alt='reviews' />
-        </div>
-        <div className={Styles.ratingText}>
-          <h2>30+</h2>
-          <p>Locations</p>
-        </div>
-      </div>
-
-      <div className={Styles.singleRating}>
-        <div className={Styles.imgContainer}>
-          <img src={Server} alt='reviews' />
-        </div>
-        <div className={Styles.ratingText}>
-          <h2>500+</h2>
-          <p>Servers</p>
-        </div>
-      </div>
+      <SingleRating image={Server} amount='500+' type='Servers' />
     </div>
   );
 };

@@ -97,6 +97,13 @@ a {
   gap: 40px;
 }
 
+.partnerLogo {
+  transition: 1s ease-in-out;
+}
+.partnerLogo:hover {
+  transform: scale(1.1);
+}
+
 .partnersContent {
   display: flex;
   flex-direction: column;
