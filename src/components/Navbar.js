@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import HeaderLinks from './HeaderLinks';
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import NavLinks from './NavLinks';
 import Styles from '../css/Homepage.module.css';
 
@@ -21,7 +21,11 @@ const Navbar = () => {
         </div>
 
         <div className={Styles.Toogle}>
-          <FaBars color='gray' onClick={() => setShow(!show)} />
+          {!show ? (
+            <FaBars color='gray' size='20px' onClick={() => setShow(!show)} />
+          ) : (
+            <FaTimes color='gray' size='20px' onClick={() => setShow(false)} />
+          )}
         </div>
       </section>
       {show ? (
