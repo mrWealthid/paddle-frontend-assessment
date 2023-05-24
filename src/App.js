@@ -8,8 +8,7 @@ function App() {
     <div className='App'>
       <Switch>
         <Route path='/' exact component={Homepage} />
-//         <Route path='/homepage' component={Homepage} />
-//         <Route path='/github' component={GitProfiles} />
+       
       </Switch>
     </div>
   );
