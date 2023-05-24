@@ -7,9 +7,9 @@ function App() {
   return (
     <div className='App'>
       <Switch>
-        <Route path='/' exact component={PageLinks} />
-        <Route path='/homepage' component={Homepage} />
-        <Route path='/github' component={GitProfiles} />
+        <Route path='/' exact component={Homepage} />
+//         <Route path='/homepage' component={Homepage} />
+//         <Route path='/github' component={GitProfiles} />
       </Switch>
     </div>
   );
